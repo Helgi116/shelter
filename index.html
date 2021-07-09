@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+	<title>Бункер</title>
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+			Бункер
+		</div>
+		<div class="menu">
+			<div class="menu-el accident">
+				Катастрофа
+			</div>
+			<div class="menu-el shelter">
+				Бункер
+			</div>
+			<div class="menu-el charter">
+				Персонаж
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="shelter-block modal hide">
+			<div class="shelter-create create-button">
+				Сгенерировать бункер
+			</div>
+		</div>
+		<div class="accident-block modal hide">
+			<div class="accident-create create-button">
+				Сгенерировать катастрофу
+			</div>
+			<p class="accident-name"></p>
+			<p class="accident-description"></p>
+			<p class="time-spent"></p>
+			<p class="population"></p>
+			<p class="target hide"></p>
+		</div>
+		<div class="charter-block modal hide">
+			<div class="charter-create create-button">
+				Сгенерировать персонажа
+			</div>
+		</div>
+	</main>
+	<div class="footer">
+		<p class="contacts">Сервис создан для частного некоммерческого использования. По всем вопросам прошу писать в telegram @dikiy_oleg</p>
+	</div>
+	<script src="script.js"></script>
+</body>

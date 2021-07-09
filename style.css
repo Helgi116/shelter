@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    background-color: #FFCC00;
+    box-shadow: 2px 2px 15px rgba(46, 46, 46, 0.822);
+}
+
+.logo {
+    font-weight: 700;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2%;
+}
+
+.menu-el {
+    padding-left: 5%;
+    cursor: pointer;
+}
+
+.menu-el:hover {
+    color: #fff;
+}
+
+.modal {
+    display: block;
+    background-color: rgb(228, 228, 228);
+    border: 1px solid #FFCC00;
+    margin: auto;
+    margin-top: 10vh;
+    padding: 2%;
+    width: 70%;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.create-button {
+    display: block;  
+    position: absolute;  
+    width: auto;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 15px;
+    margin-bottom: 2%;
+    line-height: 2em;    
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    color: cornsilk;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,.4);
+    border-top-color: rgba(0,0,0,.3);
+    border-radius: 6px;
+    background: linear-gradient(rgb(70, 70, 70), rgb(107, 107, 107));
+    box-shadow:
+     0 0 3px rgba(0,0,0,0) inset,
+     0 1px 1px 1px rgba(255,255,255,.2),
+     0 -1px 1px 1px rgba(0,0,0,0);
+    transition: .2s ease-in-out;
+  }
+.create-button:hover:not(:active) {
+    box-shadow:
+     0 0 3px rgba(0,0,0,0) inset,
+     0 1px 1px 1px #FFCC00,
+     0 -1px 1px 1px #FFCC00;
+  }
+.create-button:active {
+    background: linear-gradient(rgb(82, 82, 82), rgb(122, 122, 122));
+    box-shadow:
+     0 0 3px rgba(0,0,0,.5) inset,
+     0 1px 1px 1px rgba(255,255,255,.4),
+     0 -1px 1px 1px rgba(0,0,0,.1);
+  }
+
+.accident-name {
+    margin-top: 10%;
+    font-weight: 700;
+    font-size: x-large;
+    text-align: center;
+    color: #473900;      
+}
+
+.accident-description, .time-spent, .accident-name, .population, .target  {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 2%;
+}
+
+.target {
+    background-color: #fff;
+    color: #FFCC00;
+    padding: 2%;
+    border-radius: 6px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    color: cornsilk;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(70, 70, 70);
+}
+
+.card {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    Height: 80%;
+    margin: 0 auto 2%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    padding: 2%;
+}
+
+.p {
+    border-radius: 6px;
+    padding: 5px;
+    margin: 0 0 5px;
+    background-color: rgb(228, 228, 228);
+}
+
+.spec {
+    background-color: rgb(126, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.buncer-card {
+    margin-top: 7%;
+}
+
+.hide {
+    display: none;
+}
