@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="IMG/faviconka.ru_1_150801.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="IMG/faviconka.ru_1_150801.ico" type="image/x-icon" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+	<title>Shelter</title>
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+			<p class="logo-text">Shelter</p>
+			<p class="logo-description">Ролевая игра</p>
+		</div>
+		<div class="shelter-create create-button hide">
+			Сгенерировать бункер
+		</div>
+		<div class="accident-create create-button hide">
+			Сгенерировать катастрофу
+		</div>
+		<div class="charter-create create-button hide">
+			Сгенерировать персонажа
+		</div>
+		<div class="menu">
+			<div class="menu-el accident">
+				<img src="IMG/mushroom.svg" alt="nuclear mushroom logo" class="header-img">
+				Катастрофа
+			</div>
+			<div class="menu-el shelter">
+				<img src="IMG/bunker.svg" alt="bunker logo" class="header-img">Бункер
+			</div>
+			<div class="menu-el charter">
+				<img src="IMG/gas-mask.svg" alt="gas mask logo" class="header-img">
+				Персонаж
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="shelter-block modal hide">
+		</div>
+		<div class="accident-block modal hide">
+			<p class="accident-name"></p>
+			<p class="accident-description"></p>
+			<p class="time-spent"></p>
+			<p class="population"></p>
+			<p class="target hide"></p>
+		</div>
+		<div class="charter-block modal hide">
+		</div>
+	</main>
+	<div class="footer">
+		<p class="contacts">Сервис создан для частного некоммерческого использования. По всем вопросам прошу писать в telegram <a href="tg://resolve?domain = @dikiy_oleg">@dikiy_oleg</a></p>
+	</div>
+	<script src="script.js"></script>
+</body>
