@@ -15,6 +15,7 @@ let shelterButton = document.querySelector('.shelter'),
     accidentPopulation = document.querySelector('.population'),
     accidentTarget = document.querySelector('.target'),
     charterBlock = document.querySelector('.charter-block'),
+    gapInstruction = document.querySelector('.gap'),
     globaltimeSpent = 'Сначала сгенерируй катастрофу';
 
 let accident = [
@@ -466,18 +467,23 @@ return BiologicalStats;
 };
 
 // ************************ Показываем и прячем 'модальные окна'
-function modalToggle(modal) {
+function modalToggle(modal, button) {
+  gapInstruction.classList.add('hide');
   shelterModal.classList.add('hide');
   accidentModal.classList.add('hide');
   charterModal.classList.add('hide');
   modal.classList.remove('hide'); 
+  shelterCreate.classList.add('hide');
+  charterCreate.classList.add('hide');
+  accidentCreate.classList.add('hide');
+  button.classList.remove('hide'); 
 }   
 
-shelterButton.addEventListener( 'click' , () => modalToggle(shelterModal));
+shelterButton.addEventListener( 'click' , () => modalToggle(shelterModal, shelterCreate));
 
-accidentButon.addEventListener( 'click' , () => modalToggle(accidentModal));
+accidentButon.addEventListener( 'click' , () => modalToggle(accidentModal, accidentCreate));
 
-charterButton.addEventListener( 'click' , () => modalToggle(charterModal));
+charterButton.addEventListener( 'click' , () => modalToggle(charterModal, charterCreate));
 // *************************************************************
 
 function randomInteger(min, max) {

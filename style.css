@@ -4,6 +4,13 @@
 
 a {
     text-decoration: none;
+    color: rgb(70, 70, 70);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header {
@@ -11,9 +18,9 @@ a {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 1% 15px;
+    padding: 1% 13vw;
     background-color: #FFCC00;
-    box-shadow: 2px 2px 15px rgba(46, 46, 46, 0.822);    
+    box-shadow: 2px 2px 15px rgba(46, 46, 46, 0.438);    
 }
 
 .logo-text {
@@ -26,8 +33,12 @@ a {
     font-size: small;
 }
 
+.logo {
+    margin-right: 15px;
+}
+
 .menu {
-    display: inline-block;
+    display: inline;
     text-align: right;        
     width: 60vw;
 }
@@ -39,7 +50,6 @@ a {
 }
 
 .menu-el {
-    text-align: right;
     cursor: pointer;
     display: inline;
 }
@@ -48,29 +58,11 @@ a {
     color: #fff;
 }
 
-.modal {
-    display: block;
-    background-color: rgb(228, 228, 228);
-    border: 1px solid #FFCC00;
-    margin: auto;
-    margin-top: 10vh;
-    padding: 2%;
-    width: 70%;
-    height: 70vh;
-    overflow-y: auto;
-}
-
 .create-button {
-    width: auto;
-    height: auto;
+    display: inline-block;
     font-family: 'Roboto', sans-serif;
-    padding: 5px 15px;
-    line-height: 2em;    
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
     color: cornsilk;
-    outline: none;
+    padding: 10px;
     cursor: pointer;
     border: 1px solid rgba(0,0,0,.4);
     border-top-color: rgba(0,0,0,.3);
@@ -82,6 +74,7 @@ a {
      0 -1px 1px 1px rgba(0,0,0,0);
     transition: .2s ease-in-out;
   }
+
 .create-button:hover:not(:active) {
     box-shadow:
      0 0 3px rgba(0,0,0,0) inset,
@@ -96,46 +89,45 @@ a {
      0 -1px 1px 1px rgba(0,0,0,.1);
   }
 
+.modal {
+    display: block;
+    line-height: 1.5;
+    background-color: rgb(228, 228, 228);
+    border-radius: 6px;
+    margin-top: 4vh;
+    width: 74vw;
+    height: 80vh;
+    overflow-y: auto;
+    box-shadow: 2px 2px 15px rgba(46, 46, 46, 0.438);  
+}
+
 .accident-name {
-    margin-top: 10%;
     font-weight: 700;
     font-size: x-large;
     text-align: center;
     color: #473900;      
 }
 
-.accident-description, .time-spent, .accident-name, .population, .target  {
+.accident-description, .time-spent, .accident-name, .population, .target, .gap  {
     font-family: 'Roboto', sans-serif;
     margin-bottom: 2%;
 }
 
 .target {
-    background-color: #fff;
+    background-color: rgb(70, 70, 70);
     color: #FFCC00;
     padding: 2%;
     border-radius: 6px;
 }
 
-.footer {
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(70, 70, 70);
-}
-
 .card {
-    display: block;
+    display: inline-block;
+    max-width: 550px;
+    padding: 10px;
+    margin: 2%;
     font-family: 'Roboto', sans-serif;
-    width: 80%;
-    Height: 80%;
-    margin: 0 auto 2%;
     background-color: rgb(255, 255, 255);
     border-radius: 6px;
-    padding: 2%;
 }
 
 .p {
@@ -150,8 +142,30 @@ a {
     color: rgb(255, 255, 255);
 }
 
-.buncer-card {
-    margin-top: 7%;
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px 13vw;
+    position: absolute;
+    vertical-align: middle;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(70, 70, 70);
+}
+
+.contacts {
+    padding: 5px;
+    color: cornsilk;
+}
+
+.tg-link {
+    padding: 5px;
+    margin-left: 5px;
+    background-color: cornsilk;
+    color: rgb(70, 70, 70);
+    border-radius: 6px;
+    cursor: pointer;
+    line-height: normal;
 }
 
 .hide {
